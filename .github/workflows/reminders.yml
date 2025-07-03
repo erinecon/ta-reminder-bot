@@ -47,7 +47,7 @@ jobs:
                     "$WEBHOOK_URL"
                 }
 
-                if if [ $(($WEEK_DAY_NUM)) -eq 4 ];  # every Thursday
+                if [ $(($WEEK_DAY_NUM)) -eq 4 ];  # every Thursday
                 then
                   msg="Friendly reminder to add your DOCPR efforts to the [value map](https://docs.google.com/spreadsheets/d/1QuPgSSicRj8rW_Q05gzKSl6KcYoM8M5RSVvHMnfuw7Q/edit?usp=sharing) :)\n See [How to use the value map](https://library.canonical.com/our-organisation/engineering-excellence/documentation/handbook-for-technical-authors/guides-and-explanation/use-value-map) for more information. Reach out to the value map gatekeeper (Erin) with any questions!"
                   send_mattermost_msg "$msg"
